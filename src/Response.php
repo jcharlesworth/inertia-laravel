@@ -100,7 +100,8 @@ class Response implements Responsable
             'component' => $this->component,
             'props' => $props,
             // 'url' => $request->getBaseUrl().$request->getRequestUri(),
-            'url' => $request->fullUrl(),
+            // 'url' => $request->fullUrl(),
+            'url' => $request->getRequestUri(),
             'version' => $this->version,
         ];
 
